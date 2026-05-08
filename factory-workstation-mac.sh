@@ -44,6 +44,8 @@ if ! command -v brew >/dev/null 2>&1; then
 fi
 
 install_cask dotnet-sdk "Microsoft.DotNet.SDK"
+install_formula python@3.14 "Python"
+install_formula node "Node"
 
 echo "Skipping Microsoft.DotNet.SDK.3_1 (EOL / likely unavailable in Homebrew)"
 echo "* * * * * * * * * *"
