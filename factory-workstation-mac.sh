@@ -54,6 +54,7 @@ install_cask warp "Microsoft.WindowsTerminal equivalent"
 install_formula powershell "Microsoft.Powershell"
 install_formula azure-cli "Microsoft.AzureCLI"
 brew tap azure/bicep
+brew trust azure/bicep
 install_formula bicep "bicep"
 install_formula azd "Microsoft.Azd"
 
@@ -62,6 +63,8 @@ install_formula kubectl "Kubernetes.kubectl"
 install_formula podman "RedHat.Podman"
 install_formula git "Git.Git"
 install_formula gh "GitHub.cli"
+install_formula copilot-cli "GitHub Copilot"
+
 install_cask docker "Docker.DockerDesktop"
 install_cask visual-studio-code "Microsoft.VisualStudioCode"
 
