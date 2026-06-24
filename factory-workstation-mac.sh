@@ -44,22 +44,18 @@ if ! command -v brew >/dev/null 2>&1; then
 fi
 
 install_cask dotnet-sdk "Microsoft.DotNet.SDK"
+install_cask dotnet-sdk@9 "Microsoft.DotNet.SDK 9"
+install_cask dotnet-sdk@8 "Microsoft.DotNet.SDK 8"
+
 install_formula python@3.14 "Python"
 install_formula node "Node"
 
-echo "Skipping Microsoft.DotNet.SDK.3_1 (EOL / likely unavailable in Homebrew)"
-echo "* * * * * * * * * *"
-echo "Skipping Microsoft.DotNet.SDK.5 (EOL / likely unavailable in Homebrew)"
-echo "* * * * * * * * * *"
-
-install_cask windows-app "Microsoft.WindowsTerminal equivalent"
+install_cask warp "Microsoft.WindowsTerminal equivalent"
 install_formula powershell "Microsoft.Powershell"
 install_formula azure-cli "Microsoft.AzureCLI"
 install_formula bicep "Microsoft.Bicep"
 install_formula azd "Microsoft.Azd"
-echo "Skipping Microsoft.AzureDataStudio as disabled because it is discontinued upstream! It was disabled on 2026-02-28."
-echo "* * * * * * * * * *"
-# install_cask azure-data-studio "Microsoft.AzureDataStudio"
+
 install_formula azure-functions-core-tools@4 "Microsoft.AzureFunctionsCoreTools"
 install_formula kubectl "Kubernetes.kubectl"
 install_formula podman "RedHat.Podman"
@@ -68,21 +64,13 @@ install_formula gh "GitHub.cli"
 install_cask docker "Docker.DockerDesktop"
 install_cask visual-studio-code "Microsoft.VisualStudioCode"
 
-echo "Skipping Microsoft.Azure.StorageEmulator (Windows-only, no macOS equivalent)"
-echo "* * * * * * * * * *"
-
 install_cask storage-explorer "Microsoft.AzureStorageExplorer"
 install_cask insomnia "Insomnia"
-
-echo "Skipping Microsoft.VisualStudio.Enterprise (no macOS Visual Studio Enterprise equivalent)"
-echo "* * * * * * * * * *"
-
 install_cask lens "Lens"
 install_cask pgadmin4 "PostgreSQL.pgAdmin"
-
-echo "Skipping Microsoft.Azure.CosmosEmulator (Windows-only, no native macOS equivalent)"
-echo "* * * * * * * * * *"
 
 install_cask github "GitHub.GitHubDesktop"
 
 echo "## Misc Utilities Section"
+install_cask windows-app "Remote Desktop"
+
