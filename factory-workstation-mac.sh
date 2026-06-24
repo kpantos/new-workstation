@@ -53,7 +53,8 @@ install_formula node "Node"
 install_cask warp "Microsoft.WindowsTerminal equivalent"
 install_formula powershell "Microsoft.Powershell"
 install_formula azure-cli "Microsoft.AzureCLI"
-install_formula bicep "Microsoft.Bicep"
+brew tap azure/bicep
+install_formula bicep "bicep"
 install_formula azd "Microsoft.Azd"
 
 install_formula azure-functions-core-tools@4 "Microsoft.AzureFunctionsCoreTools"
